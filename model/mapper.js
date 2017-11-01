@@ -120,6 +120,7 @@ class BaseMapper {
       data._id = uuid();
     }
     delete data.id;
+    return data;
   }
 }
 
