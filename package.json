@@ -1,6 +1,6 @@
 {
   "name": "koa-mongoose-crud",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Base api for CRUD using koa and mongoose",
   "repository": "https://github.com/Lansoweb/koa-mongoose-crud",
   "author": "Leandro Silva <leandro@leandrosilva.info>",
