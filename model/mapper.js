@@ -63,7 +63,11 @@ class BaseMapper {
         json.deletedBy = result.deletedBy;
       }
     }
-    return new hal.Resource(json, router.url(this.detailRoute, entity._id));
+    let id = entity._id || entity.id;
+    if (typeof id === 'object') {
+      id = id.toString();
+    }
+    return new hal.Resource(json, router.url(this.detailRoute, id));
   }
 
   toHalCollection(result, ctx) {
